@@ -1,11 +1,10 @@
 package web.service;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-import web.Car;
+import web.model.Car;
 
 import java.util.List;
-
-@Service
 public interface CarService {
-    List<Car> getCarByCount(List<Car> cars, int count);
+    List<Car> getCarByCount(int count);
 }
